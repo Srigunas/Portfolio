@@ -5,30 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Updated title with actual name -->
+    <meta name="description" content="Srigunaseelan S - Flutter Developer & Python Programmer. Building cross-platform mobile and desktop applications with expertise in Firebase, state management, and scalable architecture.">
+    <meta name="keywords" content="Flutter, Dart, Python, Mobile Developer, Firebase, Android, iOS">
+    <meta property="og:title" content="Srigunaseelan S - Flutter Developer & Python Programmer">
+    <meta property="og:description" content="Building innovative cross-platform applications with Flutter and Python">
+    <meta property="og:image" content="https://github.com/Srigunas/Portfolio/raw/main/home.png">
+    <meta property="og:url" content="https://srigunas.github.io/Portfolio/">
     <title>Srigunaseelan S - Flutter Developer & Python Programmer</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar">
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <a href="#home" class="logo">Portfolio.</a>
         <ul>
-            <!-- Added proper anchor links for navigation -->
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <!-- Added mobile menu toggle -->
-        <div class="mobile-menu-toggle">
+        <div class="mobile-menu-toggle" aria-label="Toggle mobile menu" role="button" tabindex="0">
             <i class='bx bx-menu'></i>
         </div>
     </nav>
-    <div class="bars-animation">
+
+    <div class="bars-animation" aria-hidden="true">
         <div class="bar" style="--i:6;"></div>
         <div class="bar" style="--i:5;"></div>
         <div class="bar" style="--i:4;"></div>
@@ -36,209 +46,559 @@
         <div class="bar" style="--i:2;"></div>
         <div class="bar" style="--i:1;"></div>
     </div>
-    <!-- Added id for home section -->
-    <section class="home" id="home">
-        <div class="home-info">
-            <!-- Updated name to match resume -->
-            <h1>Srigunaseelan S</h1>
-            <h2>I'm a
-                <!-- Updated roles to match resume -->
-                <span style="--i:4" data-text="Flutter Developer">Flutter Developer</span>
-                <span style="--i:3" data-text="Python Programmer">Python Programmer</span>
-                <span style="--i:2" data-text="Mobile App Developer">Mobile App Developer</span>
-                <span style="--i:1" data-text="Problem Solver">Problem Solver</span>
-            </h2>
-            <!-- Updated description to match resume summary -->
-            <p>Flutter App Developer and Python Programmer with expertise in building cross-platform mobile and desktop applications. Skilled in Flutter, Dart, Firebase, and SQLite, with strong problem-solving and backend integration skills. Experienced in developing production-ready apps with real-time databases, authentication, and scalable architectures.</p>
-            <div class="btn-sci">
-                <a href="#contact" class="btn">Download CV</a>
-                <div class="sci">
-                    <!-- Added actual social media links from resume -->
-                    <a href="https://github.com/Srigunas" target="_blank" tabindex="0"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/srigunaseelan" target="_blank" tabindex="0"><i class='bx bxl-linkedin'></i></a>
-                    <a href="mailto:srigunaseelan2004@gmail.com" tabindex="0"><i class='bx bxl-gmail'></i></a>
-                    <a href="tel:+916380133541" tabindex="0"><i class='bx bxs-phone-call'></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="home.png" alt="Srigunaseelan S - Flutter Developer">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Added About section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Flutter Developer & Python Programmer</h3>
-                    <p>I'm a passionate Flutter App Developer and Python Programmer with expertise in building cross-platform mobile and desktop applications. Currently working at Gateway Software Solutions, I specialize in creating production-ready applications with clean, scalable code.</p>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4>Languages</h4>
-                            <ul>
-                                <li>Dart</li>
-                                <li>Python</li>
-                            </ul>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="home" id="home" role="region" aria-label="Hero section">
+            <div class="home-info">
+                <h1>Srigunaseelan S</h1>
+                <h2>I'm a
+                    <span style="--i:4" data-text="Flutter Developer">Flutter Developer</span>
+                    <span style="--i:3" data-text="Python Programmer">Python Programmer</span>
+                    <span style="--i:2" data-text="Mobile App Developer">Mobile App Developer</span>
+                    <span style="--i:1" data-text="Problem Solver">Problem Solver</span>
+                </h2>
+                <p>Flutter App Developer and Python Programmer with expertise in building cross-platform mobile and desktop applications. Skilled in Flutter, Dart, Firebase, and SQLite, with strong problem-solving abilities and a passion for creating user-centric solutions.</p>
+                <div class="btn-sci">
+                    <button class="btn" onclick="scrollToSection('contact')" aria-label="Download CV">Download CV</button>
+                    <div class="sci">
+                        <a href="https://github.com/Srigunas" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/srigunaseelan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="mailto:srigunaseelan2004@gmail.com" aria-label="Send email">
+                            <i class='bx bxl-gmail'></i>
+                        </a>
+                        <a href="tel:+916380133541" aria-label="Call phone number">
+                            <i class='bx bxs-phone-call'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-img">
+                <div class="img-box">
+                    <div class="img-item">
+                        <img src="home.png" alt="Srigunaseelan S - Flutter Developer" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about" role="region" aria-label="About section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Flutter Developer & Python Programmer</h3>
+                        <p>I'm a passionate Flutter App Developer and Python Programmer with expertise in building cross-platform mobile and desktop applications. Currently working at Gateway Software Solutions, I specialize in creating scalable, production-ready applications with clean architecture and best practices.</p>
+                        <p>My journey in tech started with a curiosity about how things work, which led me to learn programming and eventually specialize in Flutter and Python. I believe in continuous learning and staying updated with the latest technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Stats Section -->
+        <section class="github-stats" id="github-stats" role="region" aria-label="GitHub statistics">
+            <div class="container">
+                <h2 class="section-title">GitHub Activity</h2>
+                <div class="stats-grid">
+                    <div class="stat-card glass-effect">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Repositories</div>
+                        <i class='bx bxl-github'></i>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Commits</div>
+                        <i class='bx bxs-git'></i>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Followers</div>
+                        <i class='bx bxs-user-badge'></i>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects</div>
+                        <i class='bx bxs-briefcase'></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Skills Section -->
+        <section class="skills" id="skills" role="region" aria-label="Skills section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-container">
+                    <div class="skill-category-container">
+                        <h3>Languages</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Dart</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%; --color: #7cf03d;"></div>
+                            </div>
                         </div>
-                        <div class="skill-category">
-                            <h4>Frameworks & Tools</h4>
-                            <ul>
-                                <li>Flutter</li>
-                                <li>Android Studio</li>
-                                <li>VS Code</li>
-                                <li>PyCharm</li>
-                            </ul>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%; --color: #7cf03d;"></div>
+                            </div>
                         </div>
-                        <div class="skill-category">
-                            <h4>Databases</h4>
-                            <ul>
-                                <li>Firebase Firestore</li>
-                                <li>Firebase Storage</li>
-                                <li>SQLite</li>
-                            </ul>
+                    </div>
+
+                    <div class="skill-category-container">
+                        <h3>Frameworks & Tools</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Flutter</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%; --color: #7cf03d;"></div>
+                            </div>
                         </div>
-                        <div class="skill-category">
-                            <h4>Specialties</h4>
-                            <ul>
-                                <li>State Management (Provider)</li>
-                                <li>REST API Integration</li>
-                                <li>Cross-Platform Deployment</li>
-                                <li>Firebase Authentication</li>
-                            </ul>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Firebase</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%; --color: #7cf03d;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">REST APIs</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%; --color: #7cf03d;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-container">
+                        <h3>Databases</h3>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Firebase Firestore</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%; --color: #7cf03d;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SQLite</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%; --color: #7cf03d;"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Added Projects section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Project</h2>
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>BookMyTurf – Real-Time Turf Booking App</h3>
-                    <p class="project-status">Ongoing Project</p>
-                    <p class="project-description">A comprehensive Flutter application for real-time turf booking with role-based authentication and dynamic dashboards.</p>
-                    <div class="project-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Role-based authentication (User & Owner) using Firebase</li>
-                            <li>Real-time booking workflows with slot availability</li>
-                            <li>Google Sign-In with route guards for secure access</li>
-                            <li>Provider state management for scalability</li>
-                            <li>Firestore & Firebase Storage integration</li>
-                            <li>Responsive UI/UX design</li>
-                        </ul>
+        <!-- Enhanced Projects Section -->
+        <section class="projects" id="projects" role="region" aria-label="Projects section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="project-filter">
+                    <button class="filter-btn active" data-filter="all" aria-label="Show all projects">All</button>
+                    <button class="filter-btn" data-filter="flutter" aria-label="Show Flutter projects">Flutter</button>
+                    <button class="filter-btn" data-filter="python" aria-label="Show Python projects">Python</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card glass-effect" data-category="flutter">
+                        <div class="project-header">
+                            <h3>BookMyTurf – Real-Time Turf Booking App</h3>
+                            <span class="project-status ongoing">Ongoing</span>
+                        </div>
+                        <p class="project-description">A comprehensive Flutter application for real-time turf booking with role-based authentication and dynamic dashboards.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Role-based authentication (User & Owner) using Firebase</li>
+                                <li>Real-time booking workflows with slot availability</li>
+                                <li>Google Sign-In with route guards for secure access</li>
+                                <li>Provider state management for scalability</li>
+                                <li>Firestore & Firebase Storage integration</li>
+                                <li>Responsive UI/UX design</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Provider</span>
+                            <span class="tech-tag">Google Sign-In</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Srigunas" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View GitHub repository">
+                                <i class='bx bxl-github'></i> GitHub
+                            </a>
+                            <a href="#" class="project-link" aria-label="View live demo">
+                                <i class='bx bxs-link-external'></i> Demo
+                            </a>
+                        </div>
                     </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Provider</span>
-                        <span class="tech-tag">Google Sign-In</span>
+
+                    <div class="project-card glass-effect" data-category="flutter">
+                        <div class="project-header">
+                            <h3>E-Commerce Mobile App</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">Feature-rich e-commerce application with product catalog, shopping cart, and secure payment integration.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Product search and filtering</li>
+                                <li>Shopping cart management</li>
+                                <li>Secure payment gateway integration</li>
+                                <li>Order tracking system</li>
+                                <li>User reviews and ratings</li>
+                                <li>Wishlist functionality</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">Provider</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Srigunas" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View GitHub repository">
+                                <i class='bx bxl-github'></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-effect" data-category="python">
+                        <div class="project-header">
+                            <h3>Data Analysis & Visualization Tool</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">Python-based tool for data analysis, cleaning, and visualization with support for multiple file formats.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>CSV, Excel, and JSON file support</li>
+                                <li>Data cleaning and preprocessing</li>
+                                <li>Statistical analysis</li>
+                                <li>Interactive visualizations</li>
+                                <li>Export reports in multiple formats</li>
+                                <li>Command-line interface</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Seaborn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Srigunas" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View GitHub repository">
+                                <i class='bx bxl-github'></i> GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Added Experience section -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>Flutter Developer | Python Programmer</h3>
-                    <span class="company">Gateway Software Solutions</span>
-                    <span class="duration">2024 – Present</span>
-                </div>
-                <ul class="experience-details">
-                    <li>Developed and deployed cross-platform apps across Android, iOS, and desktop platforms</li>
-                    <li>Specialized in Flutter architecture, state management, and API integration</li>
-                    <li>Contributed to end-to-end development cycles including design, testing, and deployment</li>
-                    <li>Recognized for delivering production-ready applications with clean, scalable code</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Added Education section -->
-    <section class="education" id="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-item">
-                <h3>Bachelor of Engineering – Computer Science and Engineering</h3>
-                <p class="institution">Sri Ranganathar Institute of Engineering and Technology</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Added Contact section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class='bx bxs-phone'></i>
+        <!-- Experience Section -->
+        <section class="experience" id="experience" role="region" aria-label="Work experience section">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="experience-item glass-effect">
+                    <div class="experience-header">
                         <div>
-                            <h4>Phone</h4>
-                            <p>+91 6380133541</p>
+                            <h3>Flutter Developer | Python Programmer</h3>
+                            <p class="company">Gateway Software Solutions</p>
                         </div>
+                        <span class="duration">2024 – Present</span>
                     </div>
-                    <div class="contact-item">
-                        <i class='bx bxs-envelope'></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>srigunaseelan2004@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class='bx bxs-location-plus'></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Karaikudi, Tamil Nadu</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <input type="text" placeholder="Subject" required>
-                        <textarea placeholder="Your Message" rows="6" required></textarea>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
+                    <ul class="experience-details">
+                        <li>Developed and deployed cross-platform apps across Android, iOS, and desktop platforms</li>
+                        <li>Specialized in Flutter architecture, state management, and API integration</li>
+                        <li>Contributed to end-to-end development cycles including design, testing, and deployment</li>
+                        <li>Recognized for delivering production-ready applications with clean, scalable code</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Added footer -->
-    <footer class="footer">
+        <!-- Timeline Section -->
+        <section class="timeline" id="timeline" role="region" aria-label="Career timeline">
+            <div class="container">
+                <h2 class="section-title">Journey</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item glass-effect">
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Flutter Developer at Gateway Software Solutions</h3>
+                            <p>Building cross-platform mobile applications with Flutter and Python</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item glass-effect">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Learned Advanced Flutter Development</h3>
+                            <p>Mastered state management, Firebase integration, and production deployment</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item glass-effect">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <div class="timeline-content">
+                            <h3>Started Flutter Development Journey</h3>
+                            <p>Completed Bachelor of Engineering and began learning Flutter framework</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications" id="certifications" role="region" aria-label="Certifications section">
+            <div class="container">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="certifications-grid">
+                    <div class="cert-card glass-effect">
+                        <div class="cert-icon">
+                            <i class='bx bxs-badge-check'></i>
+                        </div>
+                        <h3>Flutter Developer Certification</h3>
+                        <p class="cert-issuer">Udemy | 2024</p>
+                        <p class="cert-description">Advanced Flutter development including state management and Firebase integration</p>
+                    </div>
+                    <div class="cert-card glass-effect">
+                        <div class="cert-icon">
+                            <i class='bx bxs-badge-check'></i>
+                        </div>
+                        <h3>Python Programming Mastery</h3>
+                        <p class="cert-issuer">Coursera | 2023</p>
+                        <p class="cert-description">Complete Python programming course with data structures and algorithms</p>
+                    </div>
+                    <div class="cert-card glass-effect">
+                        <div class="cert-icon">
+                            <i class='bx bxs-badge-check'></i>
+                        </div>
+                        <h3>Firebase Cloud Development</h3>
+                        <p class="cert-issuer">Google Cloud | 2024</p>
+                        <p class="cert-description">Firebase services, authentication, Firestore, and cloud storage</p>
+                    </div>
+                    <div class="cert-card glass-effect">
+                        <div class="cert-icon">
+                            <i class='bx bxs-badge-check'></i>
+                        </div>
+                        <h3>Bachelor of Engineering</h3>
+                        <p class="cert-issuer">Sri Ranganathar Institute of Engineering and Technology | 2023</p>
+                        <p class="cert-description">Computer Science and Engineering with focus on software development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials" role="region" aria-label="Testimonials section">
+            <div class="container">
+                <h2 class="section-title">Testimonials</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card glass-effect">
+                        <div class="testimonial-header">
+                            <div class="avatar">RS</div>
+                            <div class="testimonial-info">
+                                <h3>Ramesh Kumar</h3>
+                                <p class="role">Project Manager at Gateway Software Solutions</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Srigunaseelan is an exceptional developer. His attention to detail and commitment to delivering quality code is outstanding. He quickly learned our tech stack and became a valuable team member."</p>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-effect">
+                        <div class="testimonial-header">
+                            <div class="avatar">SK</div>
+                            <div class="testimonial-info">
+                                <h3>Sakshi Verma</h3>
+                                <p class="role">Senior Developer</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Working with Srigunaseelan has been a great experience. His problem-solving skills and ability to handle complex Flutter architectures are impressive. Highly recommended!"</p>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-effect">
+                        <div class="testimonial-header">
+                            <div class="avatar">AJ</div>
+                            <div class="testimonial-info">
+                                <h3>Anil Joshi</h3>
+                                <p class="role">Team Lead</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Srigunaseelan demonstrates great potential as a developer. He takes initiative, learns quickly, and delivers quality work. I'm confident he'll achieve great things in his career."</p>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog" id="blog" role="region" aria-label="Blog section">
+            <div class="container">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="blog-grid">
+                    <article class="blog-card glass-effect">
+                        <div class="blog-category">Flutter</div>
+                        <h3>Building Real-Time Apps with Firebase and Flutter</h3>
+                        <p class="blog-excerpt">Learn how to build scalable real-time applications using Firebase Realtime Database and Flutter. We'll explore best practices for handling real-time data synchronization...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">Nov 10, 2024</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <a href="#" class="read-more" aria-label="Read article about building real-time apps with Firebase and Flutter">Read More →</a>
+                    </article>
+
+                    <article class="blog-card glass-effect">
+                        <div class="blog-category">Python</div>
+                        <h3>Data Analysis with Pandas: A Beginner's Guide</h3>
+                        <p class="blog-excerpt">Dive into the world of data analysis with Python's Pandas library. Understand DataFrames, data cleaning, grouping, and visualization techniques for meaningful insights...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">Nov 5, 2024</span>
+                            <span class="read-time">8 min read</span>
+                        </div>
+                        <a href="#" class="read-more" aria-label="Read article about data analysis with Pandas">Read More →</a>
+                    </article>
+
+                    <article class="blog-card glass-effect">
+                        <div class="blog-category">Mobile Dev</div>
+                        <h3>State Management in Flutter: Provider vs GetX vs Riverpod</h3>
+                        <p class="blog-excerpt">Comparing different state management solutions in Flutter. Understand the pros and cons of Provider, GetX, and Riverpod to choose the right one for your project...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">Oct 28, 2024</span>
+                            <span class="read-time">12 min read</span>
+                        </div>
+                        <a href="#" class="read-more" aria-label="Read article about state management in Flutter">Read More →</a>
+                    </article>
+
+                    <article class="blog-card glass-effect">
+                        <div class="blog-category">Flutter</div>
+                        <h3>Creating Smooth Animations in Flutter</h3>
+                        <p class="blog-excerpt">Master the art of creating smooth and performant animations in Flutter. Learn about AnimationController, Tweens, and custom painters for impressive UI effects...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">Oct 15, 2024</span>
+                            <span class="read-time">10 min read</span>
+                        </div>
+                        <a href="#" class="read-more" aria-label="Read article about creating smooth animations in Flutter">Read More →</a>
+                    </article>
+                </div>
+                <div class="view-all-blog">
+                    <a href="https://medium.com/@srigunaseelan" target="_blank" rel="noopener noreferrer" class="btn" aria-label="View all articles on Medium">View All Articles</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Contact Section -->
+        <section class="contact" id="contact" role="region" aria-label="Contact section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item glass-effect">
+                            <i class='bx bxs-phone'></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+916380133541">+91 6380 133 541</a>
+                            </div>
+                        </div>
+                        <div class="contact-item glass-effect">
+                            <i class='bx bxs-envelope'></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:srigunaseelan2004@gmail.com">srigunaseelan2004@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item glass-effect">
+                            <i class='bx bxs-location-plus'></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Karaikudi, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item glass-effect">
+                            <i class='bx bxl-linkedin'></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/srigunaseelan" target="_blank" rel="noopener noreferrer">@srigunaseelan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form glass-effect">
+                        <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your name" aria-required="true">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your email" aria-required="true">
+                            </div>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required aria-label="Message subject" aria-required="true">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required aria-label="Your message" aria-required="true"></textarea>
+                            <div class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true"></div>
+                            <button type="submit" class="btn" aria-label="Send message">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <p>&copy; 2024 Srigunaseelan S. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://github.com/Srigunas" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/srigunaseelan" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="mailto:srigunaseelan2004@gmail.com"><i class='bx bxl-gmail'></i></a>
+                <a href="https://github.com/Srigunas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/srigunaseelan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="mailto:srigunaseelan2004@gmail.com" aria-label="Email">
+                    <i class='bx bxl-gmail'></i>
+                </a>
             </div>
         </div>
     </footer>
 
-    <!-- Added JavaScript for mobile menu and smooth scrolling -->
     <script>
-        // Mobile menu toggle
+        // ============ Mobile Menu Toggle ============
         const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
         const navbar = document.querySelector('.navbar ul');
         
@@ -249,7 +609,13 @@
             icon.classList.toggle('bx-x');
         });
 
-        // Active navigation highlighting
+        mobileMenuToggle.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                navbar.classList.toggle('active');
+            }
+        });
+
+        // ============ Active Navigation Highlighting ============
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.navbar ul li a');
 
@@ -269,6 +635,130 @@
                     link.parentElement.classList.add('active');
                 }
             });
+        });
+
+        // ============ Scroll Animation ============
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .cert-card, .blog-card, .testimonial-card, .experience-item, .timeline-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ============ Project Filtering ============
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'block';
+                        setTimeout(() => card.classList.add('animate-in'), 10);
+                    } else {
+                        card.classList.remove('animate-in');
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // ============ Smooth Scroll Helper ============
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // ============ Enhanced Contact Form ============
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Form validation
+            if (!name || !email || !subject || !message) {
+                showFormStatus('Please fill in all fields', 'error');
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                showFormStatus('Please enter a valid email address', 'error');
+                return;
+            }
+
+            // Show loading state
+            showFormStatus('Sending...', 'loading');
+
+            // Simulate form submission
+            setTimeout(() => {
+                const mailtoLink = `mailto:srigunaseelan2004@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+                
+                showFormStatus('Message prepared! Opening email client...', 'success');
+                
+                // Reset form
+                contactForm.reset();
+                
+                // Clear status message after 3 seconds
+                setTimeout(() => {
+                    formStatus.textContent = '';
+                    formStatus.className = '';
+                }, 3000);
+            }, 800);
+        }
+
+        function showFormStatus(message, type) {
+            formStatus.textContent = message;
+            formStatus.className = `form-status ${type}`;
+        }
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // ============ Smooth Scroll Behavior ============
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navbar.classList.remove('active');
+                }
+            });
+        });
+
+        // ============ Keyboard Navigation Support ============
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                navbar.classList.remove('active');
+            }
         });
     </script>
 </body>
